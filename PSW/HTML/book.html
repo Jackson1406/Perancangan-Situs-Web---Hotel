@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    
+    
+    <link rel="StyleSheet" href="../CSS/book.css">
+    <link rel="StyleSheet" href="../CSS/require.css">
+
+    <link rel="icon" href="../image/logo.png">
+    <title>Booking Page</title>
+
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../image/logo.png" alt="Logo_Web">
+        </div>
+
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="fac.html">Facilities</a></li>
+            <li><a href="room.html">Rooms</a>
+                <ul class="dropbar">
+                    <li><a href="room.html#deluxe">Deluxe Room</a></li>
+                    <li><a href="room.html#family">Family Room</a></li>
+                    <li><a href="room.html#suite">Suite Room</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>   
+        </ul>
+    </nav>
+
+    <div class="container1">
+        <div class="container2">
+            <form class="body1">
+                <div class="check">
+                    <div class="block in">
+                        <label for="checkIn">Check-In Date</label>
+                        <input type="date" name="checkIn" id="checkIn">
+                    </div>
+                    <div class="block out">
+                        <label for="checkOut">Check-Out Date</label>
+                        <input type="date" name="checkOut" id="checkOut">
+                    </div>
+                </div>
+
+                <div class="block name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name" autocomplete="off" min="2" >
+                    <span id="message1"></span>
+                </div>
+
+                <div class="block numbers">
+                    <label for="numbers">Phone Number</label>
+                    <input type="text" name="numbers" id="numbers" placeholder="Your Phone Number" autocomplete="off" >
+                    <span id="message2"></span>
+                </div>
+
+                <div class="drop">
+                    <div class="block roomType">
+                        <label for="type">Room Type</label>
+                        <select name="type" id="type">
+                            <optgroup label="Deluxe Room">
+                                <option value="Single Deluxe">Single Deluxe</option>
+                                <option value="Double Deluxe">Double Deluxe</option>
+                            </optgroup>
+                            <optgroup label="Family Room">
+                                <option value="Family Standard">Family Standrad</option>
+                                <option value="Family Premium">Family Premium</option>
+                            </optgroup>
+                            <optgroup label="Suite Room">
+                                <option value="Executive Suite">Executive Suite</option>
+                                <option value="Presidental Suite">Presidental Suite</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div class="block quantity">
+                        <label for="quantity">Rooms</label>
+                        <select name="quantity" id="quantity" size="1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="block email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Your Email" autocomplete="off" >
+                    <span id="message3"></span>
+                </div>
+                <div class="block cEmail">
+                    <label for="conEmail">Confirm Email</label>
+                    <input type="email" name="conEmail" id="conEmail" placeholder="Your Email" autocomplete="off" >
+                    <span id="message4"></span>
+                </div>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+
+        </div>
+    </div>
+    <div class="footer">
+        <div class="street">
+            <h3>About Hotel</h3>
+            <span>Country , Road , street</span>
+            <span>+812 5566 8888 | hotel@gmail.com</span>
+        </div>
+
+        <p>&copy; 2021 All Rights Reserved.</p>   
+
+        <div class="connect">
+            <span>Connect With Us</span>
+            <ul>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="../image/fb1.png" alt="" class="fb"></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><img src="../image/ig1.png" alt="" class="ig"></a></li>
+                <li><a href="https://twitter.com/?lang=en" target="_blank"><img src="../image/tweet1.png" alt="" class="tweet"></a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="../script.js" charset="UTF-8"></script>
+</body>
+</html>
